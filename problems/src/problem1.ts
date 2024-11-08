@@ -1,3 +1,4 @@
+
 function sumArray(num: number[]): number {
 
 
