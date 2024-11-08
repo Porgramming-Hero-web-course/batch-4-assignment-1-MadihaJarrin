@@ -8,7 +8,7 @@ A callback function passed into another function as an argument that is executed
 
 
 ```Typescript
-// function fetchData(callback: (data: string)=> void ){
+function fetchData(callback: (data: string)=> void ){
     setTimeOut(()=>{
         callback("data fetched);
     }, 1000);
@@ -21,6 +21,7 @@ fetchData((message)=>{
 callback function has some drawbacks as well such as callback hell. when multiple asynchronous operations depends on each other, callback can become nested that is leading to callback hell which is difficult to read and maintain. if I give an example of nested callback what would be like this:
 
 
+```Typescript
 fetchData((data1)=>{
     fetchData((data2) =>{
         fetchData((data3)=>{
@@ -28,7 +29,7 @@ fetchData((data1)=>{
         })
     })
 });
-
+```
 
 Also managing errors with callbacks canbe tricky, it might need to be passed through several layeers of callbacks. 
 
@@ -39,6 +40,7 @@ Benefits of promised:
 Cleaner syntax: promises allowo chaining with .then() and .catch() making thr code easier to read compare to nested callbacks.Promised have built-in mechanisms to handle error via .catch().
 
 
+```Typescript
 fetchData()
 .then((data)=>{
     console.log(data);
@@ -50,7 +52,7 @@ fetchData()
 .catch((error)=>{
     console.error(error);
 });
-
+```
 
 Although promises offer better readability and error handling than callback, they can still lead to complex code when many asynchronous operations needs to be chained.
 
@@ -63,6 +65,7 @@ Awiat: The await expression can be used inside an async function. It pauses the 
 
 
 
+```Typescript
 async function getAllData(){
     try{
         const data1 = await fetchData();
@@ -74,7 +77,7 @@ async function getAllData(){
     }
 }
 getAllData();
-
+```
 
 
 So, Key features of Async/await are cleaner Code, Error Handling, No more callback hell.It is especially beneficial when dealing with multiple async operations ans complex error handling.
