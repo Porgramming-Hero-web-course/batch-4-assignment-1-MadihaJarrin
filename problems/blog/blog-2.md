@@ -79,9 +79,9 @@ async function getAllData(){
 getAllData();
 ```
 ### Benefits of async/await:
-`-`Synchronous Style: await keyword makes asynchronous code look like synchronous code making it easier to read & maintain.
-`-`Error Handling: try/catch for more cleaner error handling.
-`-`Avoiding nested promises: async await eliminate the need for chaining .then() & .catch(), making the code more readable. 
+`-` Synchronous Style: await keyword makes asynchronous code look like synchronous code making it easier to read & maintain.
+`-` Error Handling: try/catch for more cleaner error handling.
+`-` Avoiding nested promises: async await eliminate the need for chaining .then() & .catch(), making the code more readable. 
 
 
 
