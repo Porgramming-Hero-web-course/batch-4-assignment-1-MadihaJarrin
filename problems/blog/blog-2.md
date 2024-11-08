@@ -7,6 +7,7 @@ At first, we have to know what is callback function? Let's learn about this.
 A callback function passed into another function as an argument that is executed once the asynchronous operation complete. If I give you an example, that would be like this:
 
 
+```Typescript
 // function fetchData(callback: (data: string)=> void ){
     setTimeOut(()=>{
         callback("data fetched);
@@ -16,7 +17,7 @@ fetchData((message)=>{
     conosle.log(messaeg) //data fetch will be the output .
 })
 
-
+``` 
 callback function has some drawbacks as well such as callback hell. when multiple asynchronous operations depends on each other, callback can become nested that is leading to callback hell which is difficult to read and maintain. if I give an example of nested callback what would be like this:
 
 
