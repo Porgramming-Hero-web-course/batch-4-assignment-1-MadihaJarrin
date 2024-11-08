@@ -1,6 +1,5 @@
 
-
-function validateKeys<T>(obj: T, keys: (keyof T)[]): boolean {
+function validateKeys<T extends object>(obj: T, keys: (keyof T)[]): boolean {
 
     for (let i = 0; i < keys.length; i++) {
         if (!(keys[i] in obj)) {
@@ -12,6 +11,6 @@ function validateKeys<T>(obj: T, keys: (keyof T)[]): boolean {
 
 // Sample Input:
 const persons = { name: "Alice", age: 25, email: "alice@example.com" };
-console.log(validateKeys(person, ["name", "age"]));
+console.log(validateKeys(persons, ["name", "age"]));
 
 // Sample Output: true;

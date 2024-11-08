@@ -12,4 +12,4 @@ function countWordOccurences(sentence: string, word: string): number {
 
 }
 
-console.log(countWordOccurences("TypeScript is greate, I love TypeScript", "typescript")) //output 2
+console.log(countWordOccurences("TypeScript is great, I love TypeScript", "typescript")) //output 2
