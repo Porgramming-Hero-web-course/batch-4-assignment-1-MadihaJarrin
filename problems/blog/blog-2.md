@@ -78,9 +78,14 @@ async function getAllData(){
 }
 getAllData();
 ```
+### Benefits of async/await:
+`-`Synchronous Style: await keyword makes asynchronous code look like synchronous code making it easier to read & maintain.
+`-`Error Handling: try/catch for more cleaner error handling.
+`-`Avoiding nested promises: async await eliminate the need for chaining .then() & .catch(), making the code more readable. 
 
 
-So, Key features of Async/await are cleaner Code, Error Handling, No more callback hell.It is especially beneficial when dealing with multiple async operations ans complex error handling.
+
+So,we can say Key features of Async/await are cleaner Code, Error Handling, No more callback hell.It is especially beneficial when dealing with multiple async operations ans complex error handling.So we should always use async/await for more flexiblity. 
 
 
 
