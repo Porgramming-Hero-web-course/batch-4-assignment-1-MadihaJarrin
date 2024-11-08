@@ -3,8 +3,8 @@ type T = {
     age: number
 }
 
-function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
-    return obj[key];
+function getProperty<T, arguments extends keyof T>(obj: T, prop: arguments): T[arguments] {
+    return obj[prop];
 }
 
 

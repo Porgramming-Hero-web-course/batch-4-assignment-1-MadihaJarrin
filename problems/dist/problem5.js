@@ -1,6 +1,6 @@
 "use strict";
-function getProperty(obj, key) {
-    return obj[key];
+function getProperty(obj, prop) {
+    return obj[prop];
 }
 // Sample Input:
 const person = {
