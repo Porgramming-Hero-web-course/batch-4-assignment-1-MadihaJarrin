@@ -9,5 +9,5 @@ function validateKeys(obj, keys) {
 }
 // Sample Input:
 const persons = { name: "Alice", age: 25, email: "alice@example.com" };
-console.log(validateKeys(person, ["name", "age"]));
+console.log(validateKeys(persons, ["name", "age"]));
 // Sample Output: true;

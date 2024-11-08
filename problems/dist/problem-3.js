@@ -8,4 +8,4 @@ function countWordOccurences(sentence, word) {
     //count occurences 
     return words.filter(w => w === lowerCaseWord).length;
 }
-console.log(countWordOccurences("TypeScript is greate, I love TypeScript", "typescript")); //output 2
+console.log(countWordOccurences("TypeScript is great, I love TypeScript", "typescript")); //output 2
